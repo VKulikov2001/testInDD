@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Staatliches|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* common */
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2, h3, h4 {
+  font-size: 45px;
+  font-family:'Fredoka', sans-serif; 
+}
+
+
+p {
+  font-size: 25px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  background:black;
+  width:100%;
+ 
+}
+
+
+.header__wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+.header__logo {
+  color:#fff;
+  font-size:35px;
+  text-transform: uppercase;
+  font-family:'Staatliches', cursive;
+  text-decoration:none;
+  display:inline-block;
+  vertical-align:top;
+  margin:0 20px;
+  position:relative;
+}
+
+/* nav */
+
+.nav {
+  font-size: 16px;
+  font-family:'Fredoka', sans-serif;
+  text-transform:uppercase;
+
+}
+
+.nav__i {
+  color:#fff;
+  text-decoration:none;
+  display:inline-block;
+  vertical-align:top;
+  margin:0 60px;
+  position:relative;
+  
+}
+
+.nav__i:hover {
+  color:#888;
+ 
+}
+
+.nav__i:after {
+  content:"";
+  display:block;
+  width:100%;
+  height:0.5px;
+  display:none;
+  background-color:#888;
+  position: absolute;
+  top:100%;
+  left:0;
+  transition: opacity 0.1s linear;
+
+} 
+
+.nav__i:hover:after {
+  display:block;
+}
+
+/*Введение*/
+
+.introduction {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY7GW_XvU9ahgETDdPCDCcG_gACy0KikOeqJnEF7wsRkF3X3BrVgrytYQm0aRiY2dd1E&usqp=CAU);
+  height: 100vh;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.introduction__pred {
+ font-size:75px;
+ font-family: 'Fredoka', sans-serif;
+}
+.introduction__main {
+  font-weight: 800;
+}
+.introduction__text {
+  text-indent:25px;
+  margin-top: 25px;
+}
+
+/* fr */
+
+.framwork {
+  padding-top: 1px;
+}
+
+.fr__wrapper {
+  margin-top: 40px;
+}
+
+.fr__header {
+  text-align: center;
+}
+
+.fr__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fr__img {
+  width: 400px;
+  margin:0 40px;
+}
+
+
+/*выравнивал*/
+.fr__info {
+  margin-right: 40px ;
+}
+.fr__infog {
+  margin-right: 62px ;
+}
+.fr__infof {
+  margin-right: 107px ;
+}
+
+
+
+.fr__links {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.fr__link {
+  color: #000;
+}
+
+.fr__link:hover {
+ color: #888;
+ 
+ 
+
+
+}
+
+.fr__text > p {
+  text-indent: 30px;
+  margin-top: 25px;
+  text-align: justify;
+}
+
+/*Vacancies*/
+
+.vacan__img {
+width: 200px;
+
+}
+
+.vacan__list {
+  border: 8px inset black;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 35px;
+  
+}
+.vacan__list:hover {
+  border:12px inset #1f4f16;
+}
+
+
+
+.vacan__text {
+  font-size: 25px;
+  color: #000;
+}
+
+
+
+
+
+
+/*foorer*/
+.footer{
+  left: 0; 
+  bottom: 0; 
+  padding: 40px;
+  background:Black; 
+  color: #888; 
+  margin-top:40vh;
+}
